@@ -16,7 +16,7 @@ end
 
 def list_desserts
   @recipes ||= KetoRecipes::Recipe.scrape_recipes
- @recipes_dessert = KetoRecipes::Recipe.dessert
+  @recipes_dessert = KetoRecipes::Recipe.dessert
 end
 
 
