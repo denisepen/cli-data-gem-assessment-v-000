@@ -16,11 +16,10 @@ end
 
 def list_desserts
   @recipes ||= KetoRecipes::Recipe.scrape_recipes
- KetoRecipes::Recipe.dessert.each.with_index(1) do |dessert, i|
-   puts "#{i}. #{dessert.name}"
+ @recipes_dessert = KetoRecipes::Recipe.dessert
 end
 
-  #  @recipes_dessert =
+  
 end
 
 def list_recipes
