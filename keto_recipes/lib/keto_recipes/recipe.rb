@@ -95,7 +95,7 @@ def self.dessert
       @dessert << recipe
     end
   end
-  
+
   @dessert
     @dessert.each.with_index(1) do |dessert, i|
       puts "#{i}. #{dessert.name}"
