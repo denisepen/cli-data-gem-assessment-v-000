@@ -92,7 +92,6 @@ def self.dessert
   @dessert = []
   @@recipes.each do |recipe|
     if recipe.type == "Treat"
-      binding.pry
       @dessert << recipe
     end
   end
